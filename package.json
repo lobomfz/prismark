@@ -1,6 +1,6 @@
 {
 	"name": "@lobomfz/prismark",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Generated arktype schemas for prisma",
 	"author": {
 		"name": "lobomfz",
@@ -13,10 +13,10 @@
 	"main": "dist/index.js",
 	"scripts": {
 		"build": "tsc && chmod +x dist/cli.js",
-		"ci": "bun run build && bun run format && bun run check-exports && bun run test",
+		"ci": "bun run build && bun run format && bun run check-exports",
 		"format": "biome check --write",
 		"check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
-		"local-release": "changeset version && changeset publish"
+		"release": "bun run ci && changeset version && changeset publish"
 	},
 	"bin": "dist/cli.js",
 	"bugs": {
