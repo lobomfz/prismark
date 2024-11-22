@@ -1,0 +1,44 @@
+{
+	"name": "@lobomfz/prismark",
+	"version": "0.0.1",
+	"description": "Generated arktype schemas for prisma",
+	"author": {
+		"name": "lobomfz",
+		"url": "https://github.com/lobomfz",
+		"email": "lobomfz@protonmail.com"
+	},
+	"license": "MIT",
+	"keywords": ["arktype", "prisma"],
+	"homepage": "https://github.com/lobomfz/prismark",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc && chmod +x dist/cli.js",
+		"ci": "bun run build && bun run format && bun run check-exports && bun run test",
+		"format": "biome check --write",
+		"check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+		"local-release": "changeset version && changeset publish"
+	},
+	"bin": "dist/cli.js",
+	"bugs": {
+		"url": "https://github.com/lobomfz/prismark/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lobomfz/prismark.git"
+	},
+	"files": ["dist"],
+	"type": "module",
+	"dependencies": {
+		"@prisma/generator-helper": "^5.22.0",
+		"arktype": "^2.0.0-rc.24"
+	},
+	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.17.0",
+		"@biomejs/biome": "1.9.4",
+		"@changesets/cli": "^2.27.10",
+		"@types/node": "^22.9.1",
+		"lefthook": "^1.8.4",
+		"prisma": "^5.22.0",
+		"typescript": "^5.7.2"
+	}
+}

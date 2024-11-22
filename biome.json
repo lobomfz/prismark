@@ -1,0 +1,139 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.1/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": false,
+		"rules": {
+			"recommended": false,
+			"correctness": {
+				"noUnusedImports": "warn",
+				"noChildrenProp": "warn",
+				"noConstAssign": "error",
+				"noConstantMathMinMaxClamp": "error",
+				"noConstructorReturn": "error",
+				"noEmptyCharacterClassInRegex": "error",
+				"noEmptyPattern": "warn",
+				"noFlatMapIdentity": "error",
+				"noGlobalObjectCalls": "error",
+				"noInnerDeclarations": "error",
+				"noInvalidConstructorSuper": "error",
+				"noInvalidNewBuiltin": "error",
+				"noInvalidUseBeforeDeclaration": "error",
+				"noNewSymbol": "error",
+				"noNonoctalDecimalEscape": "error",
+				"noPrecisionLoss": "error",
+				"noRenderReturnValue": "error",
+				"noSelfAssign": "error",
+				"noSetterReturn": "error",
+				"noStringCaseMismatch": "error",
+				"noSwitchDeclarations": "error",
+				"noUnnecessaryContinue": "warn",
+				"noUnreachableSuper": "warn",
+				"noUnsafeFinally": "warn",
+				"noUnsafeOptionalChaining": "error",
+				"noUnusedPrivateClassMembers": "warn",
+				"noVoidElementsWithChildren": "error",
+				"noVoidTypeReturn": "error",
+				"useArrayLiterals": "error",
+				"useHookAtTopLevel": "warn",
+				"useIsNan": "error",
+				"useJsxKeyInIterable": "warn"
+			},
+			"style": {
+				"useImportType": "warn",
+				"noInferrableTypes": "warn",
+				"noUnusedTemplateLiteral": "error",
+				"useConst": "warn",
+				"useAsConstAssertion": "error",
+				"noUselessElse": "error"
+			},
+			"a11y": {
+				"noBlankTarget": "error"
+			},
+			"complexity": {
+				"noThisInStatic": "error",
+				"noUselessCatch": "warn",
+				"noBannedTypes": "warn",
+				"noEmptyTypeParameters": "warn",
+				"noMultipleSpacesInRegularExpressionLiterals": "warn",
+				"noStaticOnlyClass": "error",
+				"noUselessConstructor": "warn",
+				"noUselessEmptyExport": "warn",
+				"noUselessFragments": "error",
+				"noUselessLoneBlockStatements": "error",
+				"noUselessRename": "warn",
+				"noUselessSwitchCase": "warn",
+				"noUselessTernary": "error",
+				"noUselessThisAlias": "error",
+				"noUselessTypeConstraint": "warn",
+				"noWith": "error",
+				"useFlatMap": "warn",
+				"useOptionalChain": "error",
+				"useRegexLiterals": "warn",
+				"useSimpleNumberKeys": "error"
+			},
+			"performance": {
+				"noAccumulatingSpread": "warn",
+				"noReExportAll": "warn"
+			},
+			"suspicious": {
+				"noApproximativeNumericConstant": "error",
+				"noArrayIndexKey": "warn",
+				"noAssignInExpressions": "error",
+				"noAsyncPromiseExecutor": "error",
+				"noCatchAssign": "error",
+				"noClassAssign": "error",
+				"noCommentText": "error",
+				"noCompareNegZero": "error",
+				"noConfusingVoidType": "error",
+				"noConstEnum": "error",
+				"noDebugger": "error",
+				"noControlCharactersInRegex": "error",
+				"noDuplicateCase": "error",
+				"noDuplicateClassMembers": "error",
+				"noDuplicateJsxProps": "error",
+				"noDuplicateObjectKeys": "error",
+				"noDuplicateParameters": "error",
+				"noDuplicateTestHooks": "error",
+				"noEmptyInterface": "warn",
+				"noExtraNonNullAssertion": "warn",
+				"noFallthroughSwitchClause": "warn",
+				"noFunctionAssign": "error",
+				"noGlobalAssign": "error",
+				"noGlobalIsFinite": "error",
+				"noImportAssign": "error",
+				"noLabelVar": "error",
+				"noMisleadingCharacterClass": "error",
+				"noMisleadingInstantiator": "error",
+				"noMisrefactoredShorthandAssign": "error",
+				"noPrototypeBuiltins": "error",
+				"noSelfCompare": "error",
+				"noShadowRestrictedNames": "warn",
+				"noSparseArray": "error",
+				"noThenProperty": "error",
+				"noUnsafeDeclarationMerging": "error",
+				"noUnsafeNegation": "error",
+				"useAwait": "warn",
+				"useDefaultSwitchClauseLast": "warn",
+				"useIsArray": "error",
+				"useValidTypeof": "error"
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": true,
+		"indentStyle": "tab",
+		"indentWidth": 2
+	},
+	"javascript": {
+		"formatter": {
+			"trailingCommas": "all"
+		}
+	},
+	"files": {
+		"ignore": []
+	}
+}
