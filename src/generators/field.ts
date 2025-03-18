@@ -1,6 +1,6 @@
 import type { DMMF } from "@prisma/generator-helper";
-import { processedEnums } from "./enum.js";
 import { config } from "../index.js";
+import { processedEnums } from "./enum.js";
 
 const PrimitiveFields = [
 	"Int",

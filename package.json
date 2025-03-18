@@ -1,6 +1,6 @@
 {
 	"name": "@lobomfz/prismark",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Generated arktype schemas for prisma",
 	"author": {
 		"name": "lobomfz",

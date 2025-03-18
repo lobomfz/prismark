@@ -2,8 +2,8 @@ import fs from "node:fs/promises";
 import { join } from "node:path";
 import pkg from "@prisma/generator-helper";
 import { processEnums } from "./generators/enum.js";
-import { processAllLines } from "./lines.js";
 import { processPlain } from "./generators/plain.js";
+import { processAllLines } from "./lines.js";
 
 export const config = {
 	output: "generated",
