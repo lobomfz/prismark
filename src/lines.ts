@@ -1,4 +1,6 @@
 import { processedEnums } from "./generators/enum.js";
+import { processedPlain } from "./generators/plain.js";
+import { config } from "./index.js";
 
 export type Declarations = {
 	name: string;
@@ -20,7 +22,8 @@ function process(declarations: Declarations[], suffix: string) {
 }
 
 export function processAllLines() {
-	process(processedEnums, "_literal");
+	process(processedEnums, config.enumSuffix);
+	process(processedPlain, config.plainSuffix);
 
 	return processedLines;
 }

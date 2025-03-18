@@ -4,17 +4,40 @@ datasource db {
 }
 
 generator prismark {
-  provider   = "node ./dist/cli.js"
-  output     = "./generated"
-  fileName   = "schema.ts"
+  provider    = "node ./dist/cli.js"
+  output      = "./generated"
+  fileName    = "schema.ts"
+  enumSuffix  = "_literal"
+  plainSuffix = "_plain"
+  nullish     = true
 }
 
 enum test {
-    prop1
-    prop2
+  prop1
+  prop2
+}
+
+model posts {
+  id String @id @default(uuid())
+
+  title String @db.VarChar(50)
+
+  user_id String
+
+  created_at DateTime @default(now())
+
+  user users @relation(fields: [user_id], references: [id])
 }
 
 model users {
-    id String @id @default(uuid())  
-    type test
+  id String @id @default(uuid())
+
+  type test
+
+  name       String   @db.VarChar(50)
+  string_arr String[]
+  enum_arr   test[]
+  age        Int?
+
+  posts posts[]
 }

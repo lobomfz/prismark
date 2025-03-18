@@ -15,5 +15,5 @@ export function processEnums(enums: Readonly<DMMF.DatamodelEnum[]>) {
 }
 
 function stringifyEnum(data: DMMF.DatamodelEnum) {
-	return `"${data.values.map((v) => `'${v.name}'`).join(" | ")}"`;
+	return `type.enumerated(${data.values.map((v) => `'${v.name}'`)})`;
 }

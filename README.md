@@ -1,11 +1,13 @@
-# WIP
-enums only for now
+# DOCS WIP
 
 ## example usage
 ```prisma
 generator prismark {
-  provider = "bunx @lobomfz/prismark"
-  output   = "../src/Database/Generated"
-  fileName = "Prismark.ts"
+  provider    = "node ./dist/cli.js"
+  output      = "./generated"
+  fileName    = "schema.ts"
+  enumSuffix  = "_literal"
+  plainSuffix = "_plain"
+  nullish     = true
 }
 ```
