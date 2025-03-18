@@ -3,7 +3,7 @@
 ## Example usage
 ```prisma
 generator prismark {
-  provider    = "node ./dist/cli.js"
+  provider    = "bunx @lobomfz/prismark"
   output      = "./generated"
   fileName    = "schema.ts"
   enumSuffix  = "_literal"
