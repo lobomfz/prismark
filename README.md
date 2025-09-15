@@ -1,17 +1,22 @@
-# Prisma to Arktype generator (WIP)
+# Prisma to Arktype generator
 
-## Example usage
+## Usage
 ```prisma
 generator prismark {
-  provider    = "bunx @lobomfz/prismark"
+  provider    = "npx prismark"
+
   output      = "./generated"
   fileName    = "schema.ts"
+  
   enumSuffix  = "_literal"
   plainSuffix = "_plain"
+  
   // if the field should be optional
   nullish     = true
 }
 
+
+// Example schema
 enum role {
   admin
   moderator
@@ -27,6 +32,12 @@ model users {
 
   created_at DateTime @default(now())
 }
+```
+
+## Generate
+Run the Prisma generator after configuring your `schema.prisma`:
+```bash
+bun prisma generate
 ```
 
 ## Example output
